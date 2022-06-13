@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/fader"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBalans" />
+
+
+    <TextView
+        android:id="@+id/progressCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4sp"
+        android:text="@string/center2"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <SeekBar
+        android:id="@+id/seekCenter"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:max="6"
+        android:min="-6"
+        android:progress="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressCenter" />
+
+    <SeekBar
+        android:id="@+id/seekBasy"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:max="6"
+        android:min="-6"
+        android:progress="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBasy" />
+
+    <SeekBar
+        android:id="@+id/seekTreble"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:max="6"
+        android:min="-6"
+        android:progress="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressTreble" />
+
+    <SeekBar
+        android:id="@+id/seekSub"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:max="6"
+        android:min="-6"
+        android:progress="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/progressBasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/basy"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/progressTreble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="@string/treble2"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/seekBasy" />
+
+    <TextView
+        android:id="@+id/progressSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/sub"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bass"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volumeSeekbar" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/treble"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBasy" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekTreble" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/subwoffer"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekCenter" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/svc"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/volumeSeekbar" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="87dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/seekTreble"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <RadioButton
+            android:id="@+id/SvcOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/off" />
+
+        <RadioButton
+            android:id="@+id/SvcLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/low" />
+
+        <RadioButton
+            android:id="@+id/SvcMid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mid" />
+
+        <RadioButton
+            android:id="@+id/SvcHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/high" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekBalans"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:max="9"
+        android:min="-9"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/Balans" />
+
+    <SeekBar
+        android:id="@+id/seekFader"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:max="9"
+        android:min="-9"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/Fader" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/balans"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekSub" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/seekSub"
+        app:layout_constraintTop_toBottomOf="@+id/Balans" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/l"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/f"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/r"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/Balans"
+        android:layout_width="54dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="9dp"
+        android:text="@string/bal"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/seekSub" />
+
+    <TextView
+        android:id="@+id/Fader"
+        android:layout_width="53dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/fad"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/Pakiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/version"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/svcTx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+
+    <TextView
+        android:id="@+id/currentSpeedID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_gps"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/start_service"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_service"
+        app:layout_constraintEnd_toEndOf="@+id/btnStartService"
+        app:layout_constraintStart_toStartOf="@+id/btnStartService"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartService" />
+
+    <TextView
+        android:id="@+id/vol2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vol_a"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="350dp"
+        android:text="@string/volume2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volumeSeekbar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="@string/gps_speed"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/vol2"
+        app:layout_constraintTop_toBottomOf="@+id/volumeSeekbar" />
+
+    <SeekBar
+        android:id="@+id/volumeSeekbar"
+        android:layout_width="600dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:max="40"
+        android:progress="1"
+        app:layout_constraintEnd_toEndOf="@+id/btnStartService"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/volApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:showText="true"
+        android:text="@string/app_sys_volume"
+        android:textOff="@string/app"
+        android:textOn="@string/sys"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/imageAns" />
+
+    <Switch
+        android:id="@+id/speedGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:showText="true"
+        android:text="@string/test_gps_speed"
+        android:textOff="@string/app"
+        android:textOn="@string/sys"
+        app:layout_constraintEnd_toEndOf="@+id/volApp"
+        app:layout_constraintTop_toBottomOf="@+id/volApp" />
+
+    <SeekBar
+        android:id="@+id/speedBar"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:max="200"
+        android:progress="1"
+        app:layout_constraintStart_toEndOf="@+id/seekFader"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="@string/textview"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnStopService"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopService" />
+
+    <ImageView
+        android:id="@+id/imageCrc"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopService"
+        app:srcCompat="@android:drawable/presence_online"
+        android:contentDescription="@string/crc" />
+
+    <ImageView
+        android:id="@+id/imageAns"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintStart_toStartOf="@+id/imageCrc"
+        app:layout_constraintTop_toBottomOf="@+id/imageCrc"
+        app:srcCompat="@android:drawable/presence_online"
+        android:contentDescription="@string/amp_answer" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/crc"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageCrc"
+        app:layout_constraintTop_toTopOf="@+id/imageCrc" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/amp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageAns"
+        app:layout_constraintTop_toTopOf="@+id/imageAns" />
+
+    <TextView
+        android:id="@+id/ampErrors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/amperrors"
+        app:layout_constraintEnd_toEndOf="@+id/textRec"
+        app:layout_constraintTop_toBottomOf="@+id/textRec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
