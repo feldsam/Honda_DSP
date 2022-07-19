@@ -23,4 +23,5 @@ If You want change ot adapt - feel free to do it - just publish it.
 
 Links to builded APK:
 https://www.dropbox.com/s/zwvs0g42nb78gf4/HondaDSP.apk?dl=0
+or:
 https://wrzucajpliki.pl/j6wa9asf9tiz/HondaDSP.apk
